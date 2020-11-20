@@ -24,19 +24,19 @@
 	<hr>
 	<form class="container">
 		<form action="<?= site_url('mahasiswa/simpan_data')?>" method="post">
-			<div class="form_group">
+			<div class="form-group">
 				<label for="">NIM</label>
-				<input type="number" name="nim" class="form_control">
+				<input type="number" name="nim" class="form-control">
 			</div>
-			<div class="form_group">
+			<div class="form-group">
 				<label for="">Nama Mahasiswa</label>
-				<input type="text" name="nama" class="form_control">
+				<input type="text" name="nama" class="form-control">
 			</div>
-			<div class="form_group">
+			<div class="form-group">
 				<label for="">Alamat</label>
-				<textarea class="form_group" name="alamat"></textarea>
+				<textarea class="form-control" name="alamat"></textarea>
 			</div>
-			<div class="form_group">
+			<div class="form-group">
 				<button type="submit" name="submit" class="btn btn-primary">
 					Simpan Data
 				</button>
