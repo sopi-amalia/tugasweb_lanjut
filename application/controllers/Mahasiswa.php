@@ -24,13 +24,13 @@ class Mahasiswa extends CI_Controller {
 	public function simpan_data()
 	{
 		$data = array(
-			'nim' => $this->input->post('nim'),
-			'nama' => $this->input->post('nama'),
-			'alamat' => $this->input->post('alamat'),
+			'nim' 		=> $this->input->post('nim'),
+			'nama' 		=> $this->input->post('nama'),
+			'alamat' 	=> $this->input->post('alamat'),
 		);
 
 		// print_r($data)
-		$this->m_mahasiswa->store($data);
+		$this->m_mahasiswa->simpan_data($data);
 		redirect('mahasiswa/index','refresh');
 
 	}

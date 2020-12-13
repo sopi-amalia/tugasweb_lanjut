@@ -1,18 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class m_mahasiswa extends CI_Model {
+class Cmodel extends CI_Model {
 
 	// CRUD
 	public function getAll()
 	{
 		// select+from mahasiswa
-		return $this->db->get('mahasiswa')->result();
+		return $this->db->get('c_table')->result();
 	}
 	public function simpan_data($object)
 	{
-		 $this->db->insert('mahasiswa',$object);
+		return $this->db->insert('c_table',$object);
 	}
 
 }
-
